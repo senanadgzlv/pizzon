@@ -1,0 +1,965 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: url("/img/chef-bg (1).png");
+  background-color: #121619;
+  position: relative;
+}
+
+.hero .swiper {
+  width: 100%;
+  height: 100vh;
+}
+
+.hero header {
+  width: 100%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero header .logo {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero header nav {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero header nav ul {
+  width: 60%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.hero header nav ul li a {
+  text-decoration: none;
+  font-size: 17px;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.hero header nav .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 50px;
+}
+
+.hero header nav .icons .fa-solid {
+  color: #fd9d3e;
+  margin-right: 20px;
+}
+
+.hero header nav .icons p {
+  display: inline-block;
+  color: #fff;
+  width: 110px;
+}
+
+.hero header nav .dark {
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: #91b842;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: 700;
+  -webkit-transition: 1s;
+  transition: 1s;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.hero header nav .dark:hover {
+  background-color: #fd9d3e;
+  color: #fff;
+}
+
+.hero .foodcontent {
+  padding-bottom: 50px;
+}
+
+.hero .foodcontent h1 {
+  font-size: 100px;
+  color: #fefefe;
+  font-family: sans-serif;
+  font-weight: 700;
+  -webkit-animation: fadeInLeft 0.5s ease forwards;
+          animation: fadeInLeft 0.5s ease forwards;
+}
+
+.hero .foodcontent h1 span {
+  color: #fd9d3e;
+}
+
+.hero .foodcontent h3 {
+  font-size: 25px;
+  color: #fd9d3e;
+  margin-right: 40px;
+  font-family: Montserrat;
+  line-height: 30px;
+  -webkit-animation: fadeInRight 0.5s ease forwards;
+          animation: fadeInRight 0.5s ease forwards;
+}
+
+.hero .food {
+  position: absolute;
+  top: 50px;
+}
+
+.hero .food h1 {
+  font-size: 80px;
+  color: #fefefe;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+
+.hero .food h1 span {
+  color: #fd9d3e;
+}
+
+.hero .food h3 {
+  font-size: 25px;
+  color: #fd9d3e;
+  text-align: center;
+  font-family: Montserrat;
+  line-height: 30px;
+  padding-top: 20px;
+}
+
+.hero .pizzasekil img {
+  position: absolute;
+  bottom: 80px;
+  left: 180px;
+  z-index: 0;
+}
+
+.order-top {
+  width: 100%;
+  height: 20vh;
+  position: absolute;
+  top: 550px;
+  background: url("/img/order-top.png");
+  background-size: cover;
+  position: absolute;
+  z-index: 1;
+}
+
+.services {
+  width: 100%;
+  height: 70vh;
+  background-color: #fd9d3e;
+  position: relative;
+}
+
+.services .hook {
+  width: 100%;
+}
+
+.services .hook h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #121619;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.services .hook p {
+  line-height: 1.5rem;
+  color: #121619;
+  font-size: 16px;
+}
+
+.services .hook .fa-solid {
+  font-size: 70px;
+  color: #121619;
+  cursor: pointer;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.services .hook .fa-solid:hover {
+  color: #fff;
+}
+
+.bottom-foto {
+  width: 100%;
+  height: 20vh;
+  background: url(/img/order-bottom.png);
+}
+
+.fresh {
+  width: 100%;
+  height: 100vh;
+}
+
+.fresh .pizza h3 {
+  font-size: 30px;
+  font-family: Pacifico;
+  color: #fd9d3e;
+}
+
+.fresh .pizza h1 {
+  font-size: 50px;
+  color: #1d1d1d;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.fresh .pizzalar {
+  width: 100%;
+  padding-top: 15px;
+}
+
+.fresh .pizzalar img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
+  cursor: pointer;
+}
+
+.fresh .pizzalar img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.fresh .pizzalar a {
+  font-size: 25px;
+  color: #1d1d1d;
+  text-decoration: none;
+  font-family: sans-serif;
+  padding-top: 25px;
+  font-weight: 700;
+}
+
+.fresh .pizzalar a:hover {
+  color: #fd9d3e;
+}
+
+.fresh .viewmore #view {
+  margin-top: 40px;
+  border: 1px solid #fd9d3e;
+  background-color: #fd9d3e;
+  color: #fff;
+  padding: 15px 41px;
+  border-radius: 50px;
+  display: inline-block;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: 700;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.fresh .viewmore #view:hover {
+  background-color: #fff;
+  color: #fd9d3e;
+}
+
+.foto {
+  width: 100%;
+  height: 20vh;
+  background: url("/img/menu-top-bg.png");
+  background-color: #121619;
+}
+
+.menu {
+  width: 100%;
+  height: 130vh;
+  background-color: #121619;
+}
+
+.menu .freshpizza h3 {
+  font-size: 30px;
+  font-family: Pacifico;
+  color: #fd9d3e;
+  margin-top: 50px;
+}
+
+.menu .freshpizza h1 {
+  font-size: 50px;
+  color: #fff;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.menu .menular .mymenu {
+  width: 100%;
+}
+
+.menu .menular .mymenu .buttonlar {
+  width: 800px;
+  height: 60px;
+  border-radius: 200px;
+  background-color: #2b2c2d;
+}
+
+.menu .menular .mymenu .buttonlar .btn1 {
+  border: none;
+  width: 100px;
+  height: 20px;
+  background-color: #2b2c2d;
+  color: #fff;
+  font-size: 14px;
+  font-family: Montserrat;
+}
+
+.menu .menular .mymenu .buttonlar .btn1:hover {
+  background-color: #fd9d3e;
+  width: 100px;
+  height: 60px;
+  border-radius: 50px;
+}
+
+.menu .menular .mymenu .buttonlar .all {
+  width: 100px;
+  height: 60px;
+  border-radius: 50px;
+  background-color: #fd9d3e;
+  border: none;
+  color: #fff;
+}
+
+.menu .menucontent {
+  line-height: 25px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.menu .menucontent .contentler {
+  width: 100%;
+}
+
+.menu .menucontent .contentler img {
+  width: 180px;
+  height: 180px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.menu .menucontent .contentler img:hover {
+  -webkit-transform: translateY(-25px);
+          transform: translateY(-25px);
+}
+
+.menu .menucontent .contentler a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  font-family: Monserrat;
+}
+
+.menu .menucontent .contentler a:hover {
+  color: #fd9d3e;
+}
+
+.menu .menucontent .contentler p {
+  color: #999;
+}
+
+.menu .menucontent .contentler span {
+  color: #fd9d3e;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+.menu .menucontent .contentler h4 {
+  color: #fff;
+}
+
+.menu-bottom {
+  width: 100%;
+  height: 30vh;
+  background: url("/img/menu-bottom-bg.png");
+  background-color: #121619;
+}
+
+.form {
+  width: 100%;
+  height: 100vh;
+}
+
+.form .formcontent .formyazilar {
+  margin-top: 100px;
+  margin-right: 30px;
+}
+
+.form .formcontent .formyazilar h3 {
+  font-size: 30px;
+  color: #fd9d3e;
+  font-family: Pacifico;
+}
+
+.form .formcontent .formyazilar h1 {
+  font-size: 60px;
+  color: #1d1d1d;
+  font-weight: 700;
+  font-family: sans-serif;
+  padding-top: 20px;
+}
+
+.form .formcontent .formyazilar p {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  padding-top: 20px;
+}
+
+.form .formcontent .formyazilar .opsidiv {
+  width: 410px;
+  height: 100px;
+  border: 10px solid #fd9d3e;
+  margin-top: 25px;
+}
+
+.form .formcontent .formyazilar .opsidiv .icindekidiv {
+  width: 390px;
+  height: 80px;
+  background-color: #121619;
+  color: #fff;
+  position: relative;
+  -webkit-transition: 1s;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.form .formcontent .formyazilar .opsidiv .icindekidiv:hover {
+  background-color: #fff;
+  color: #121619;
+}
+
+.form .formcontent .formyazilar .opsidiv .icindekidiv .fa-phone {
+  font-size: 35px;
+  position: absolute;
+  left: 0;
+}
+
+.form .formcontent .formyazilar .opsidiv .icindekidiv p {
+  font-size: 40px;
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+  font-weight: 700;
+}
+
+.form .book {
+  margin-top: 100px;
+}
+
+.form .book h3 {
+  text-align: center;
+  color: #121619;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  padding-bottom: 20px;
+}
+
+.form .book a {
+  padding: 15px 41px;
+  border-radius: 50px;
+  background-color: #121619;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid #121619;
+}
+
+.form .book a:hover {
+  background-color: #fff;
+  color: #121619;
+}
+
+.chef-bg {
+  width: 100%;
+  height: 20vh;
+  background: url("/img/menu-top-bg.png");
+  background-color: #121619;
+}
+
+.chef {
+  width: 100%;
+  height: 100vh;
+  background: url("/img/chef-bg (1).png");
+  background-color: #121619;
+}
+
+.chef .chefdivi {
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: .5s;
+  transition: .5s;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.chef .chefdivi img {
+  width: 300px;
+}
+
+.chef .chefdivi .yazilar {
+  width: 300px;
+  height: 100px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.chef .chefdivi .yazilar h3 {
+  color: #121619;
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+
+.chef .chefdivi .yazilar p {
+  color: #999;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+.chef .chefdivi span {
+  position: absolute;
+  top: 0;
+  left: -110%;
+  width: 20%;
+  height: 100%;
+  background: rgba(182, 178, 178, 0.877);
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-transform: skewX(10deg);
+          transform: skewX(10deg);
+}
+
+.chef .chefdivi:hover span {
+  left: 110%;
+}
+
+.chef .expertcontent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.chef .expertcontent h3 {
+  font-size: 30px;
+  color: #fd9d3e;
+  font-family: Pacifico;
+}
+
+.chef .expertcontent h1 {
+  font-size: 70px;
+  color: #fff;
+  font-family: sans-serif;
+  margin-top: 15px;
+}
+
+.chef-bottom {
+  width: 100%;
+  height: 20vh;
+  background: url("/img/menu-bottom-bg.png");
+  background-color: #121619;
+}
+
+.about {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.about .aboutpizza {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 100px;
+}
+
+.about .aboutpizza .aboutcontent h3 {
+  font-size: 30px;
+  color: #fd9d3e;
+  font-family: Pacifico;
+}
+
+.about .aboutpizza .aboutcontent h1 {
+  font-size: 70px;
+  color: #121619;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+
+.about .aboutpizza .aboutcontent p {
+  font-size: 12px;
+  color: #121619;
+  font-family: sans-serif;
+  line-height: 20px;
+  margin-top: 25px;
+}
+
+.about .aboutpizza .aboutcontent a {
+  margin-top: 40px;
+  border: 1px solid #fd9d3e;
+  background-color: #fd9d3e;
+  color: #fff;
+  padding: 15px 41px;
+  border-radius: 50px;
+  display: inline-block;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: 700;
+  -webkit-transition: 1s;
+  transition: 1s;
+  text-decoration: none;
+}
+
+.about .aboutpizza .aboutcontent a:hover {
+  background-color: #fff;
+  color: #fd9d3e;
+}
+
+.about .pizzaphoto img {
+  position: absolute;
+  right: 100px;
+  bottom: 180px;
+}
+
+.footer {
+  width: 100%;
+  height: 70vh;
+  background-color: #121619;
+}
+
+.footer .footerlogo {
+  margin-top: 100px;
+  line-height: 30px;
+}
+
+.footer .footerlogo p {
+  color: #fff;
+  font-size: 12px;
+  font-family: sans-serif;
+}
+
+.footer .footerhours {
+  margin-top: 100px;
+}
+
+.footer .footerhours h3 {
+  color: #fff;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+
+.footer .footerhours p {
+  margin-top: 35px;
+  color: #fff;
+  line-height: 25px;
+}
+
+.footer .footerhours p span {
+  margin-left: 50px;
+}
+
+.footer .footerhours p #closed {
+  margin-left: 50px;
+  padding: 5px 15px;
+  background-color: #fd9d3e;
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer .footerlist {
+  margin-top: 100px;
+}
+
+.footer .footerlist h3 {
+  color: #fff;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+
+.footer .footerlist ul {
+  margin-top: 35px;
+  line-height: 45px;
+}
+
+.footer .footerlist ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    width: 100%;
+    height: 100vh;
+    background: url("/img/chef-bg (1).png");
+    background-color: #121619;
+    position: relative;
+  }
+  .hero .swiper {
+    width: 100%;
+    height: 100vh;
+  }
+  .hero header {
+    width: 100%;
+    height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero header .logo {
+    width: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero header nav {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero header nav ul {
+    width: 60%;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    display: none;
+  }
+  .hero header nav ul li a {
+    text-decoration: none;
+    font-size: 17px;
+    color: #fff;
+    font-family: sans-serif;
+  }
+  .hero header nav .icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 50px;
+    text-align: center;
+  }
+  .hero header nav .icons .fa-solid {
+    color: #fd9d3e;
+    margin-right: 20px;
+  }
+  .hero header nav .icons p {
+    display: inline-block;
+    color: #fff;
+    width: 110px;
+  }
+  .hero header nav .dark {
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: #91b842;
+    color: #fff;
+    font-size: 18px;
+    margin-right: 50px;
+  }
+  .hero .foodcontent {
+    padding-bottom: 50px;
+  }
+  .hero .foodcontent h1 {
+    font-size: 50px;
+    color: #fefefe;
+    font-family: sans-serif;
+    font-weight: 700;
+    -webkit-animation: fadeInLeft 0.5s ease forwards;
+            animation: fadeInLeft 0.5s ease forwards;
+  }
+  .hero .foodcontent h1 span {
+    color: #fd9d3e;
+  }
+  .hero .foodcontent h3 {
+    font-size: 15px;
+    color: #fd9d3e;
+    margin-right: 40px;
+    font-family: Montserrat;
+    line-height: 30px;
+    -webkit-animation: fadeInRight 0.5s ease forwards;
+            animation: fadeInRight 0.5s ease forwards;
+  }
+  .hero .imgpizza img {
+    width: 500px;
+    position: absolute;
+    z-index: 0;
+  }
+  .hero .food {
+    position: absolute;
+    top: 50px;
+  }
+  .hero .food h1 {
+    font-size: 50px;
+    color: #fefefe;
+    font-family: sans-serif;
+    font-weight: 700;
+  }
+  .hero .food h1 span {
+    color: #fd9d3e;
+  }
+  .hero .food h3 {
+    font-size: 20px;
+    color: #fd9d3e;
+    text-align: center;
+    font-family: Montserrat;
+    line-height: 30px;
+    padding-top: 20px;
+  }
+  .hero .pizzasekil img {
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    z-index: 0;
+    width: 800px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .order-top {
+    width: 100%;
+    height: 20vh;
+    position: absolute;
+    top: 550px;
+    background: url("/img/order-top.png");
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */
